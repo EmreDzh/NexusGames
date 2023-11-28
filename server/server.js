@@ -1339,6 +1339,54 @@
     	}
     };
     var seedData = {
+        games: {
+            "3564027f-adcd-4425-b2c0-1253d2386c0c": {
+                "title": "God of War Ragnarok",
+                "genre": "Fantasy",
+                "imageUrl": "https://assets-prd.ignimgs.com/2021/09/09/god-of-war-ragnarok-button-1631231879154.jpg",
+                "summary": "From Santa Monica Studio comes the sequel to the critically acclaimed God of War (2018). Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world. Together, Kratos and Atreus venture deep into the Nine Realms in search of answers as Asgardian forces prepare for war. Along the way they will explore stunning, mythical landscapes, gather allies from across the realms and face fearsome enemies in the form of Norse gods and monsters. As the threat of Ragnarök grows ever closer, Kratos and Atreus find themselves choosing between the safety of their family and the safety of the realms...",
+                "Main Story": "26 Hours",
+                "Main + Sides": "39 Hours",
+                "SpeedRun": "12 Hours",
+                "howLongIs:":"",
+                "_id": "3564027f-adcd-4425-b2c0-1253d2386c0c"
+            },
+            "c64db398-91cd-487c-b900-86058c0422f8": {
+                "title": "Cyberpunk",
+                "genre": "Role-Playing",
+                "imageUrl": "https://images.cgames.de/images/gamestar/226/cyberpunk-2077-netflix-anime-edgerunners_6104785.jpg",
+                "summary": "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.",
+                "Main Story": "25 Hours",
+                "Main + Sides": "61 Hours",
+                "SpeedRun": "20 Hours",
+                "howLongIs:":"",
+                "_id": "d725275c-8df7-11ee-b9d1-0242ac120002c"
+            },
+            "daf55cd4-9aa1-4b7a-82a9-fbdb74aaa84b": {
+                "title": "Witcher 3",
+                "genre": "Fantasy",
+                "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
+                "summary": "In The Witcher 3 an ancient evil stirs, awakening. An evil that sows terror and abducts the young. An evil whose name is spoken only in whispers: the Wild Hunt. Led by four wraith commanders, this ravenous band of phantoms is the ultimate predator and has been for centuries. Its quarry: humans.",
+                "Main Story": "51 Hours",
+                "Main + Sides": "103 Hours",
+                "SpeedRun": "35 Hours",
+                "howLongIs:":"",
+                "_id": "de809b4e-8df7-11ee-b9d1-0242ac120002"
+            },
+            "f1fe0cf6-8df7-11ee-b9d1-0242ac120002": {
+                "title": "Witcher 3",
+                "genre": "Fantasy",
+                "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202107/1612/Y5RHNmzAtc6sRYwZlYiKHAxN.png",
+                "summary": "The Golden Order has been broken. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between. In the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the Erdtree, has been shattered. Marika's offspring, demigods all, claimed the shards of the Elden Ring known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater Will. And now the guidance of grace will be brought to the Tarnished who were spurned by the grace of gold and exiled from the Lands Between. Ye dead who yet live, your grace long lost, follow the path to the Lands Between beyond the foggy sea to stand before the Elden Ring. And become the Elden Lord.",
+                "Main Story": "58 Hours",
+                "Main + Sides": "100 Hours",
+                "SpeedRun": "10 Hours",
+                "howLongIs:":"",
+                "_id": "f61da4ae-8df7-11ee-b9d1-0242ac120002"
+            },
+            
+        },
+
     	recipes: {
     		"3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
