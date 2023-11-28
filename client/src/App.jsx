@@ -5,13 +5,17 @@ import ErrorHandler from './components/ErrorHandler';
 import AuthGuard from './guards/AuthGuard';
 import Path from "./paths/paths"
 
+import Header from './components/Header/Header';
+import MiddleSection from './components/MiddleSection/MiddleSection';
+
 function App() {
   
   return (
     <ErrorHandler>
       <AuthProvider>
             
-        <h1>hello</h1>
+        <Header/>
+        <MiddleSection/>
 
       </AuthProvider>
     </ErrorHandler>
