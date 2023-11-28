@@ -6,3 +6,27 @@
     color: white;
     padding: 650px; 
 }
+
+.middle-section-content article{
+    display: inline;
+    margin-bottom: 60px;
+    position: absolute;
+    top: 350px;
+    left: 250px;
+}
+
+.middle-section-content article h2{
+    font-size: 55px;
+    color: #f22050;
+}
+
+.middle-section-content article h3{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+
+.middle-section-ul li {
+    margin-bottom: 10px; 
+    font-size: 18px;
+}
