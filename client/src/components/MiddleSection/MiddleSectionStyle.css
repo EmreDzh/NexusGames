@@ -1,4 +1,7 @@
 .middle-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('https://images2.alphacoders.com/106/1061949.jpg'); 
     background-size: cover; 
     background-position: auto; 

@@ -1,19 +1,22 @@
 
 .container {
-    display: flex;
-    height: 50vh;
-    width: 100vh;
-    
-  }
-  
-  .rectangle {
-    display: flex;
-    width: 100%;
-    max-width: 900px;
-    height: 100%;
-    border: 2px solid #000;
-    border-radius: 10px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vh; /* Keep this for horizontal centering */
+
+}
+
+.rectangle {
+  display: flex;
+  width: 90%; /* Adjust the width to your preferred size */
+  max-width: 900px; /* Maximum width */
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+}
 
   .title {
     display: flex;
@@ -21,7 +24,7 @@
     justify-content: center;
     align-items: center;
     padding-left: 50px;
-    padding-top: 70px;
+    padding-top: 20px;
   }
   
   .left {
@@ -65,3 +68,17 @@
     width: 130px; 
     border-radius: 10px;
   }
+
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 620px;
+    gap: 770px;
+  }
+
+
+  
+
+  

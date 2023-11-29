@@ -30,9 +30,7 @@ export default function MiddleSection(){
                         </ul>
                     </article>
                     
-                    {games.map(game => (
-                        <GameMiddeSection key={game._id} {...game} />
-                    ))}
+                    {games.length > 0 && <GameMiddeSection games={games} />}
                     
                     
                 </div>

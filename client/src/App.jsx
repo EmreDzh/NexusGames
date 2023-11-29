@@ -13,10 +13,8 @@ function App() {
   return (
     <ErrorHandler>
       <AuthProvider>
-            
         <Header/>
         <MiddleSection/>
-
       </AuthProvider>
     </ErrorHandler>
 
