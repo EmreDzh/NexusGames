@@ -1,2 +1,2 @@
 # NexusGames
- NexusGames - ReactJS SPA Gaming lib application
+ NexusGames - ReactJS SPA Gaming library application
