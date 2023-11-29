@@ -26,9 +26,9 @@ export default function GameMiddeSection({games}){
             <img src={currentGame.imageUrl} alt="Story" />
           </div>
           <div className="middle">
-            <p>Main Story</p>
-            <p>Main + Extra</p>
-            <p>Speed Run</p>
+            <p>Main Story:</p>
+            <p>Main + Sides:</p>
+            <p>Speed Run:</p>
           </div>
           <div className="right">
             <div>{currentGame.MainStory}</div>
