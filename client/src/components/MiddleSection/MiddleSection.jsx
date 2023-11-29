@@ -1,6 +1,20 @@
+import { useEffect, useState } from 'react';
+import GameMiddeSection from './GameMiddleSection/GameMiddleSection';
 import './MiddleSectionStyle.css'
+import * as gameService from "../../services/gameService"
 
 export default function MiddleSection(){
+    const [games, setGames] = useState([]);
+
+    useEffect(() => {
+        gameService.getAll()
+            .then(result => setGames(result))
+            .catch(err => {
+                console.log(err);
+            });
+            
+    }, []);
+
     return(
         <div className="middle-section">
             <div className="middle-section-container">
@@ -15,6 +29,12 @@ export default function MiddleSection(){
                             <li>Compare your game times to other players.</li>
                         </ul>
                     </article>
+                    
+                    {games.map(game => (
+                        <GameMiddeSection key={game._id} {...game} />
+                    ))}
+                    
+                    
                 </div>
             </div>
         </div>
