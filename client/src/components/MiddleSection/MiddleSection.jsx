@@ -3,9 +3,11 @@ import GameMiddeSection from './GameMiddleSection/GameMiddleSection';
 import './MiddleSectionStyle.css'
 import * as gameService from "../../services/gameService"
 
+
+
 export default function MiddleSection(){
     const [games, setGames] = useState([]);
-
+    
     useEffect(() => {
         gameService.getAll()
             .then(result => setGames(result))
@@ -14,6 +16,8 @@ export default function MiddleSection(){
             });
             
     }, []);
+
+    
 
     return(
         <div className="middle-section">
@@ -30,7 +34,7 @@ export default function MiddleSection(){
                         </ul>
                     </article>
                     
-                    {games.length > 0 && <GameMiddeSection games={games} />}
+                    {games.length > 0 && <GameMiddeSection games={games}  />}
                     
                     
                 </div>

@@ -8,6 +8,7 @@ import { useNavigate, Link } from 'react-router-dom';
 
 
 const RegisterFormKeys = {
+    Username: 'username',
     Email: 'email',
     Password: 'password',
     ConfirmPassword: 'confirm-password',
@@ -19,6 +20,7 @@ export default function Register() {
 
     const {registerSubmitHandler} = useContext(AuthContext);
     const {values, onChange, onSubmit} = useForm(registerSubmitHandler, {
+        [RegisterFormKeys.Username]: '',
         [RegisterFormKeys.Email]: '',
         [RegisterFormKeys.Password]: '',
         [RegisterFormKeys.ConfirmPassword]: ''
@@ -30,6 +32,7 @@ export default function Register() {
                 <div className="registration form">
                     <header>Signup</header>
                     <form id='register' onSubmit={onSubmit}>
+                        <input type="username" id="username" name="username"  placeholder="Enter your username" onChange={onChange}  values={values[RegisterFormKeys.Username]}/>
                         <input type="email" id="email" name="email"  placeholder="Enter your email" onChange={onChange}  values={values[RegisterFormKeys.Email]}/>
                         <input type="password" id='password' name='password' placeholder="Create a password" onChange={onChange } values={values[RegisterFormKeys.Password]} />
                         <input type="password" id='confirm-password' name="confirm-password" placeholder="Confirm your password" onChange={onChange} values={values[RegisterFormKeys.ConfirmPassword]} />

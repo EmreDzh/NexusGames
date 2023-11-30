@@ -10,6 +10,7 @@ import MiddleSection from './components/MiddleSection/MiddleSection';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Logout from './components/Logout/Logout';
+import GameInfo from './components/GameInfo/GameInfo';
 
 function App() {
   
@@ -21,6 +22,8 @@ function App() {
             <Route path={Path.Home} element={<MiddleSection/>}/>
             <Route path={Path.Login} element={<Login/>}/>
             <Route path={Path.Register} element={<Register/>}/>
+            <Route path={Path.GameInfo} element={<GameInfo/>}/>
+
             <Route element={<AuthGuard/>}>
               <Route path={Path.Logout} element={<Logout/>}/>
             </Route>

@@ -2,7 +2,9 @@ const Path = {
     Home: "/",
     Login: "/login",
     Register: "/register",
-    Logout: "/logout"
+    Logout: "/logout",
+    GameInfo: "/games/:gameId",
+    GameLib: "/games"
 };
 
 export default Path;

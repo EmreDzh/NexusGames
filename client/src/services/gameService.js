@@ -8,6 +8,12 @@ export const getAll = async () => {
     return result;
 };
 
+export const getOne = async (gameId) => {
+    const result = await request.get(`${baseUrl}/${gameId}`, );
+
+    return result;
+}
+
 export const getGames = async () => {
     const query = new URLSearchParams({
         //sortBy: `_createdOn desc`,
@@ -19,3 +25,4 @@ export const getGames = async () => {
 
     return result;
 }
+

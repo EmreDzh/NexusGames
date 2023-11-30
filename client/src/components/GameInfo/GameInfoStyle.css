@@ -1,0 +1,41 @@
+.game-info-container {
+    padding: 70px;
+  }
+
+.game-info-container article{
+    display: flex;
+}
+  
+.game-info-left {
+    flex: 1;
+  }
+  
+.game-image {
+    width: 700px; /* Adjust as needed */
+    height: 400px; /* Maintain aspect ratio */
+}
+  
+.game-info-rectangle {
+    flex: 2;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 20px;
+  }
+  
+.info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.info p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+.game-info-box {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+  }
