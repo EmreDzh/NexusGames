@@ -75,4 +75,20 @@ button:hover {
 }
 
 
+.not-found-animation {
+    animation-name: notFoundAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2; 
+}
 
+@keyframes notFoundAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}

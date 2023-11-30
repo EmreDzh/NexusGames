@@ -24,12 +24,29 @@ export default function Header(){
     }, []);
 
     const handleSearch = () => {
+        if (searchQuery.trim() === '') {
+
+            const searchBar = document.querySelector('.search-bar');
+            searchBar.classList.add('not-found-animation');
+
+            setTimeout(() => {
+                searchBar.classList.remove('not-found-animation');
+            }, 2000);
+            
+            return;
+        }
+
         const game = games.find(game => game.title.toLowerCase().includes(searchQuery.toLowerCase()));
         if (game) {
             navigate(`${Path.GameLib}/${game._id}`);
             setSearchQuery('');
         } else {
-            console.log('Game not found');
+            const searchBar = document.querySelector('.search-bar');
+            searchBar.classList.add('not-found-animation');
+
+            setTimeout(() => {
+                searchBar.classList.remove('not-found-animation');
+            }, 2000);
         }
     };
 
