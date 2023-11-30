@@ -16,7 +16,7 @@ export default function GameMiddeSection({games}){
     };
 
     return(
-    <div className="container">
+      <div className="container">
         
         <div className="rectangle">
             

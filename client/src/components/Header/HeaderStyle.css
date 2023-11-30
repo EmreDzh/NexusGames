@@ -27,7 +27,7 @@
     align-items: center;
 }
 
-input[type="text"] {
+.search-text {
     padding: 10px;
     width: 300px;
     border-radius: 4px;
@@ -58,6 +58,7 @@ button:hover {
    
 }
 
+
 .header-ul li:hover {
     background-color: #B0A8B9;
     border-radius: 5px;
@@ -69,6 +70,9 @@ button:hover {
     color: red;
 }
 
+.user-name{
+    color: #d32f2f;;
+}
 
-/* BACKGROUND SLIDER */
+
 
