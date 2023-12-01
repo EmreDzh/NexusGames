@@ -83,7 +83,6 @@ export default function Header(){
 
                     {!isAuthenticated && (
                         <>
-                            <li><a href="">Game Collection</a></li>
                             <li><Link className='header-links' to={Path.Login}>Login</Link></li>
                             <li><Link className='header-links' to={Path.Register}>Register</Link></li>
                         </>

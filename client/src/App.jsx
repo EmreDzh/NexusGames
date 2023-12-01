@@ -11,6 +11,7 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Logout from './components/Logout/Logout';
 import GameInfo from './components/GameInfo/GameInfo';
+import GameCollection from './components/GameCollection/GameCollection';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
         <Header/>
         <Routes>
             <Route path={Path.Home} element={<MiddleSection/>}/>
+            <Route path={Path.GameLib} element={<GameCollection/>}/>
             <Route path={Path.Login} element={<Login/>}/>
             <Route path={Path.Register} element={<Register/>}/>
             <Route path={Path.GameInfo} element={<GameInfo/>}/>

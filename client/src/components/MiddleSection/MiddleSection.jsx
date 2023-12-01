@@ -2,11 +2,14 @@ import { useEffect, useState } from 'react';
 import GameMiddeSection from './GameMiddleSection/GameMiddleSection';
 import './MiddleSectionStyle.css'
 import * as gameService from "../../services/gameService"
+import { useNavigate } from 'react-router-dom';
+import Path from '../../paths/paths';
 
 
 
 export default function MiddleSection() {
     const [games, setGames] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         gameService.getAll()
@@ -17,6 +20,12 @@ export default function MiddleSection() {
 
     }, []);
 
+
+    const handleGameCollectionClick = () => {
+        navigate(Path.GameLib)
+    }
+    
+ 
     return (
         <>
             <div className="middle-section">
@@ -34,6 +43,10 @@ export default function MiddleSection() {
                         </article>
                         
                         {games.length > 0 && <GameMiddeSection games={games}  />}
+                    </div>
+
+                    <div className="game-collection-button">
+                        <button onClick={handleGameCollectionClick}>Check out the Game Collection!</button>
                     </div>
                 </div>
             
