@@ -14,7 +14,7 @@
   width: 90%; 
   max-width: 900px; 
   height: 100%;
-  border: 2px solid #000;
+  border: 3px solid #000;
   border-radius: 10px;
   box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
 }
@@ -32,7 +32,7 @@
 
   .title:hover{
     text-decoration: underline;
-    color: #f22050;
+    color: #F6AE2D;
   }
   
   .left {
