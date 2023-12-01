@@ -5,7 +5,7 @@
   align-items: center;
   height: 50vh;
   width: 100vh; 
-  
+  padding-top: 30px;
 
 }
 
@@ -26,6 +26,13 @@
     align-items: center;
     padding-left: 50px;
     padding-top: 20px;
+    cursor: pointer;
+    
+  }
+
+  .title:hover{
+    text-decoration: underline;
+    color: #f22050;
   }
   
   .left {
@@ -34,14 +41,9 @@
     justify-content: center;
     align-items: center;
     padding: 40px;
+    
   }
 
-  .clicked {
-    /* Define your clicked effect styles here */
-    border: 2px solid #f00; /* For example, change border color */
-    /* Add any other styles or animations to represent the clicked effect */
-  }
-  
   .left img {
     width: 100%; 
     height: 100%; 
@@ -49,6 +51,7 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+    cursor: pointer;
     
   }
   
@@ -79,17 +82,31 @@
     border-radius: 10px;
   }
 
-  .buttons{
+  .buttons-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     position: absolute;
     bottom: 1px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 1150px; /* Same as the rectangle's maximum width */
-    
+    max-width: 1150px;
   }
+  
+  .arrow-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+
+  
+
+  
+ 
 
   
 

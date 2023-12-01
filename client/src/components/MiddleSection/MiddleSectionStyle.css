@@ -7,14 +7,14 @@
     background-position: auto; 
     background-repeat: no-repeat; 
     color: white;
-    padding: 650px; 
+    padding: 550px; 
 }
 
 .middle-section-content article{
     display: inline;
     margin-bottom: 60px;
     position: absolute;
-    top: 350px;
+    top: 250px;
     left: 250px;
 }
 
@@ -33,3 +33,38 @@
     margin-bottom: 10px; 
     font-size: 18px;
 }
+
+.middle-section-footer {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #4B4453;
+
+  }
+
+  .middle-section-footer article{
+    margin: 5px; 
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 150px;
+  }
+  .middle-section-footer article h2{
+    color: white;
+  }
+
+  .middle-section-footer article h3{
+    font-size: 25px;
+    color: white;
+  }
+
+  .middle-section-footer article p{
+    max-width: 700px;
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+  }
+
+  .sign-off{
+    margin-left: 1400px;
+  }

@@ -24,7 +24,6 @@ export default function GameInfo() {
 
     return (
 
-
         <div className="game-info-container">
             <article>
                 <div className="game-info-left">
