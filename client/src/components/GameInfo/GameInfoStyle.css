@@ -1,3 +1,26 @@
+/* Modal styles */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Background with opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 70%;
+}
+
+
+
 .game-info-section{
   background-image: url('https://img.freepik.com/free-photo/person-facing-purgatory-world-illustration_456031-40.jpg?w=1380&t=st=1701444366~exp=1701444966~hmac=e4df5c6687295f41dbbed34f36bdc163f8df29ce4fb40b99d2f279b0904a488c'); 
   background-size: cover; 
@@ -67,7 +90,7 @@
     justify-content: center;
     position: absolute;
     padding-top: 90px;
-    padding-left: 500px;
+    padding-left: 255px;
     gap: 150px;
   }
 
@@ -80,5 +103,6 @@
   font-size: 25px;
   color: red;
 }
+
 
 

@@ -4,7 +4,9 @@ const Path = {
     Register: "/register",
     Logout: "/logout",
     GameInfo: "/games/:gameId",
-    GameLib: "/games"
+    GameLib: "/games",
+    AddGameTime: "addGameTime/:gameId"
+    
 };
 
 export default Path;

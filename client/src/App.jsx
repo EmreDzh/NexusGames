@@ -13,6 +13,7 @@ import Logout from './components/Logout/Logout';
 import GameInfo from './components/GameInfo/GameInfo';
 import GameCollection from './components/GameCollection/GameCollection';
 
+
 function App() {
   
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path={Path.Login} element={<Login/>}/>
             <Route path={Path.Register} element={<Register/>}/>
             <Route path={Path.GameInfo} element={<GameInfo/>}/>
+            
 
             <Route element={<AuthGuard/>}>
               <Route path={Path.Logout} element={<Logout/>}/>
