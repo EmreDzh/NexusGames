@@ -12,14 +12,11 @@ import GameTimeInfo from './GameTimeInfo/GameTimeInfo';
 
 export default function GameInfo() {
     const navigate = useNavigate();
-
     const { userId, isAuthenticated } = useContext(AuthContext);
-    
-    const [game, setGame] = useState({});
-    
-    const [showFullSummary, setShowFullSummary] = useState(false);
     const { gameId } = useParams();
 
+    const [game, setGame] = useState({});
+    const [showFullSummary, setShowFullSummary] = useState(false);
     const [showGameTimeModal, setShowGameTimeModal] = useState(false);
 
     useEffect(() => {
