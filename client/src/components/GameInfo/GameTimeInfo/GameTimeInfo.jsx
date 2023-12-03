@@ -23,10 +23,7 @@ export default function GameTimeInfo({ title, MainStory, MainSides, SpeedRun }) 
             .catch(error => console.error('Error fetching game times:', error));
     }, [gameId]);
 
-    console.log(gameTime);
-
-
-
+    
     return (
         <>
 
