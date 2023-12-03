@@ -101,9 +101,9 @@ export default function GameInfo() {
                         className="game-image"
                     />
                 </div>
-                <article className='game-time-article'>
-                    <GameTimeInfo key={game._id} {...game} />
-                </article>
+                
+                <GameTimeInfo key={game._id} {...game} />
+                
                 <article>
                     <div className="game-info-box">
                         <p>

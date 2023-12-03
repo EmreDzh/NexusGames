@@ -1,0 +1,8 @@
+.game-times-section .game-info-rectangle:not(:last-child) {
+    margin-bottom: 50px; 
+}
+
+.h2-game-time{
+    color: red;
+    font-size: 25px;
+}
