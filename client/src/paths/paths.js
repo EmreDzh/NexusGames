@@ -5,7 +5,8 @@ const Path = {
     Logout: "/logout",
     GameInfo: "/games/:gameId",
     GameLib: "/games",
-    AddGameTime: "addGameTime/:gameId"
+    AddGameTime: "addGameTime/:gameId",
+    CreateGame: "/games/create"
     
 };
 

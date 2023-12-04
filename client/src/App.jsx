@@ -12,6 +12,7 @@ import Register from './components/Register/Register';
 import Logout from './components/Logout/Logout';
 import GameInfo from './components/GameInfo/GameInfo';
 import GameCollection from './components/GameCollection/GameCollection';
+import CreateGame from './components/CreateGame/CreateGame';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
             <Route path={Path.Login} element={<Login/>}/>
             <Route path={Path.Register} element={<Register/>}/>
             <Route path={Path.GameInfo} element={<GameInfo/>}/>
-            
+            <Route path={Path.CreateGame} element={<CreateGame/>}/>
 
             <Route element={<AuthGuard/>}>
               <Route path={Path.Logout} element={<Logout/>}/>

@@ -115,7 +115,7 @@ export default function Header() {
                 <ul className='header-ul'>
                     {isAuthenticated && (
                         <>
-                            <li><a href="">Create Game</a></li>
+                            <li><Link to={Path.CreateGame}>Create Game</Link></li>
                             <li><a href="">My Library</a></li>
                             <li><Link className='header-links' to={Path.Logout}>Logout</Link></li>
                             <div className='user-name'>Welcome, Choom!</div>

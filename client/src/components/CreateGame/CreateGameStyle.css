@@ -1,21 +1,21 @@
 .create-game-container {
-    width: 80%;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    width: 90%;
+    margin: 80px auto;
+    background-color: #4B4453;
+    padding: 40px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .create-game-container h1{
     text-align: center;
-    color: #333;
+    color: white;
 }
 
 .game-form-create {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -23,31 +23,40 @@
     margin-bottom: 15px;
 }
 
-label{
+.form-group-create label{
     margin-bottom: 5px;
-    color: #555;
+    color: white;
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="date"],
-textarea {
+.form-group-create input[type="text"],
+.form-group-create input[type="date"],
+.form-group-create textarea {
     width: 100%;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 14px;
+    border-radius: 10px;
     border: 1px solid #ccc;
+    
 }
 
-button {
+.form-group-create-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+
+.form-group-create button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #f44336;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #d32f2f;
 }
