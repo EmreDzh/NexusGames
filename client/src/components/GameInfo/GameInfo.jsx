@@ -1,12 +1,12 @@
 import './GameInfoStyle.css'
 import './GameInfoCreateStyle.css'
 import { useContext, useEffect,  useState } from "react";
-import {  useNavigate, useParams } from "react-router-dom";
+import {  useNavigate, useParams, Link } from "react-router-dom";
 
 import * as gameService from '../../services/gameService'
 import * as gameTimeService from '../../services/gameTimeService'
 import AuthContext from '../../contexts/authContext';
-import useForm from '../../hooks/useForm';
+import {pathToUrl} from '../../utils/pathUtils'
 import Path from '../../paths/paths';
 import GameTimeInfo from './GameTimeInfo/GameTimeInfo';
 
@@ -78,7 +78,8 @@ export default function GameInfo() {
                         <button onClick={toggleGameTimeModal}>Submit your playtime!</button>
                         {userId === game._ownerId && (
                             <>
-                                <button>Edit Game</button>
+                                <Link to={pathToUrl(Path.EditGame, {gameId})}><button>Edit Game</button></Link>
+                                
                                 <button>Delete Game</button>
                             </>
                         )}

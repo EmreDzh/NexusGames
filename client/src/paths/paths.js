@@ -6,7 +6,8 @@ const Path = {
     GameInfo: "/games/:gameId",
     GameLib: "/games",
     AddGameTime: "addGameTime/:gameId",
-    CreateGame: "/games/create"
+    CreateGame: "/games/create",
+    EditGame: "/games/:gameId/Edit"
     
 };
 

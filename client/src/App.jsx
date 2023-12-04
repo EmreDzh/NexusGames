@@ -13,31 +13,35 @@ import Logout from './components/Logout/Logout';
 import GameInfo from './components/GameInfo/GameInfo';
 import GameCollection from './components/GameCollection/GameCollection';
 import CreateGame from './components/CreateGame/CreateGame';
+import EditGame from './components/EditGame/EditGame';
 
 
 function App() {
-  
+
   return (
     <ErrorHandler>
       <AuthProvider>
-        <Header/>
+        <Header />
         <Routes>
-            <Route path={Path.Home} element={<MiddleSection/>}/>
-            <Route path={Path.GameLib} element={<GameCollection/>}/>
-            <Route path={Path.Login} element={<Login/>}/>
-            <Route path={Path.Register} element={<Register/>}/>
-            <Route path={Path.GameInfo} element={<GameInfo/>}/>
-            <Route path={Path.CreateGame} element={<CreateGame/>}/>
+          <Route path={Path.Home} element={<MiddleSection />} />
+          <Route path={Path.GameLib} element={<GameCollection />} />
+          <Route path={Path.Login} element={<Login />} />
+          <Route path={Path.Register} element={<Register />} />
+          <Route path={Path.GameInfo} element={<GameInfo />} />
 
-            <Route element={<AuthGuard/>}>
-              <Route path={Path.Logout} element={<Logout/>}/>
-            </Route>
+
+          <Route element={<AuthGuard />}>
+            <Route path={Path.CreateGame} element={<CreateGame />} />
+            <Route path={Path.EditGame} element={<EditGame />} />
+            <Route path={Path.Logout} element={<Logout />} />
+          </Route>
+
         </Routes>
-        
+
       </AuthProvider>
     </ErrorHandler>
 
-        
+
   )
 }
 
