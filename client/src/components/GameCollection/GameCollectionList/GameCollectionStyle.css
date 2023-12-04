@@ -19,3 +19,20 @@
     cursor: pointer;
 }
 
+.title-colletion:hover{
+    text-decoration: underline;
+}
+
+.middle-colletion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    
+
+}
+
+.middle-colletion p{
+    font-size: 20px;
+}
+

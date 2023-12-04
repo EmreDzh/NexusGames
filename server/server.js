@@ -1351,6 +1351,16 @@
                 SpeedRun: "12 Hours",
                 _id: "3564027f-adcd-4425-b2c0-1253d2386c0b"
             },
+            "e0072112-92ad-11ee-b9d1-0242ac120002": {
+                title: "God of War II",
+                genre: "Fantasy",
+                imageUrl: "https://cdn.kobo.com/book-images/d81e4cdd-822e-48da-8d0c-05ed1713ece6/1200/1200/False/god-of-war-volume-2-fallen-god.jpg",
+                summary: "God of War II continues the story of Kratos, with him wielding his newly-found godlike powers, much to the dismay and fear of the other gods.",
+                MainStory: "12 Hours",
+                MainSides: "13 Hours",
+                SpeedRun: "4 Hours",
+                _id: "e4dd7c4a-92ad-11ee-b9d1-0242ac120002"
+            },
             "c64db398-91cd-487c-b900-86058c0422f8": {
                 title: "Cyberpunk",
                 genre: "Role-Playing",

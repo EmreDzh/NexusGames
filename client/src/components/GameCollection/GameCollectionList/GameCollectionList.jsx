@@ -21,15 +21,11 @@ export default function GameCollectionList({_id, title, imageUrl, MainStory, Mai
                             <img src={imageUrl} alt="Story" />
                         </div>
                         <div className="middle-colletion">
-                            <p>Main Story:</p>
-                            <p>Main + Sides:</p>
-                            <p>Speed Run:</p>
+                            <p>Main Story: {MainStory}</p>
+                            <p>Main + Sides: {MainSides}</p>
+                            <p>Speed Run: {SpeedRun}</p>
                         </div>
-                        <div>
-                            <div>{MainStory}</div>
-                            <div>{MainSides}</div>
-                            <div>{SpeedRun}</div>
-                        </div>
+                        
                     </div>
                 </article>
             </div>

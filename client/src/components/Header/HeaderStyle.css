@@ -91,3 +91,64 @@ button:hover {
         transform: translateX(10px);
     }
 }
+
+.game-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.game-modal-content {
+    background-color: #4B4453;
+    padding: 200px;
+    border-radius: 5px;
+    max-width: 700px
+}
+
+.game-list-modal {
+    list-style: none;
+   
+}
+
+.game-item-modal {
+    cursor: pointer;
+    padding: 15px 0; 
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+
+.game-item-modal:hover {
+    text-decoration: underline;
+}
+
+
+.game-title-modal {
+    font-size: 25px; 
+    color: white;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.close-button-modal-container{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button-modal {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
