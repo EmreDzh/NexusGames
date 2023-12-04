@@ -58,7 +58,6 @@ export default function GameInfo() {
 
         const gameData = Object.fromEntries(new FormData(event.currentTarget));
 
-        
         try {
             await gameTimeService.create(game._id, gameData);
             setShowGameTimeModal(!showGameTimeModal);
@@ -67,6 +66,16 @@ export default function GameInfo() {
             console.log(err);
         }
     };  
+
+    const handleDelete = async () => {
+        const hasConfirmed = confirm(`Are you sure you want to delete ${game.title}?`);
+
+        if(hasConfirmed){
+            await gameService.remove(gameId);
+
+            navigate(Path.GameLib)
+        }
+    }
 
 
     return (
@@ -79,8 +88,8 @@ export default function GameInfo() {
                         {userId === game._ownerId && (
                             <>
                                 <Link to={pathToUrl(Path.EditGame, {gameId})}><button>Edit Game</button></Link>
-                                
-                                <button>Delete Game</button>
+
+                                <button onClick={handleDelete}>Delete Game</button>
                             </>
                         )}
                     </>
