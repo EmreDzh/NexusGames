@@ -25,7 +25,9 @@ export default class ErrorHandler extends Component {
 
     render() {
         if (this.state.hasError) {
-            return <h1>404 Check the error handler</h1>
+            return(
+                <h1>404 Check the error handler</h1>
+            )
         }
 
         return this.props.children;

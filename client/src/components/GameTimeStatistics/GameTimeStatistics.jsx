@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Path from '../../paths/paths';
 
 import * as gameService from '../../services/gameService';
-import * as gameTimeService from '../../services/gameTimeService';
+
 
 export default function GameTimeStatistics() {
     const navigate = useNavigate();
@@ -26,7 +26,7 @@ export default function GameTimeStatistics() {
             });
     }, []);
 
-
+   
     useEffect(() => {
         const getSortedGames = () => {
             const sorted = [...games].sort((a, b) => {
