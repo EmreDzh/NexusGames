@@ -1,17 +1,22 @@
 import './GameTimeStatisticsStyle.css';
 import { useEffect, useState } from 'react';
 import Chart from 'chart.js/auto';
+import { useNavigate } from 'react-router-dom';
+import Path from '../../paths/paths';
 
 import * as gameService from '../../services/gameService';
 import * as gameTimeService from '../../services/gameTimeService';
 
 export default function GameTimeStatistics() {
+    const navigate = useNavigate();
+    
     const [games, setGames] = useState([]);
     const [sortedGames, setSortedGames] = useState([]);
     const [sortByLongest, setSortByLongest] = useState(false);
     const [chart, setChart] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
     const gamesPerPage = 3;
+    
 
     useEffect(() => {
         gameService.getAll()
@@ -20,6 +25,7 @@ export default function GameTimeStatistics() {
                 console.log(err);
             });
     }, []);
+
 
     useEffect(() => {
         const getSortedGames = () => {
@@ -110,8 +116,8 @@ export default function GameTimeStatistics() {
                         <div className="game-colletion-container">
                             <article>
                                 <div className="rectangle-colletion-charts">
-                                    <h1 className="title-colletion">{game.title}</h1>
-                                    <div className="left-colletion">
+                                    <h1 onClick={() => navigate(`${Path.GameLib}/${game._id}`)} className="title-colletion">{game.title}</h1>
+                                    <div onClick={() => navigate(`${Path.GameLib}/${game._id}`)} className="left-colletion">
                                         <img src={game.imageUrl} alt="Story" />
                                     </div>
                                     <div className="middle-colletion">

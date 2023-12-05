@@ -31,6 +31,7 @@ export default function GameCollection() {
         <div className="game-collection-section">
             <div className="game-time-stat-button-container">
                 <Link to={Path.GameTimeStats}><button>In-Depth Game Time Statistics and Tracking</button></Link>
+                
             </div>
             <div className="games-appearing">
                 {currentGames.map(game => (
