@@ -26,6 +26,7 @@ export default function EditGame() {
             });
     }, [gameId])
 
+
     const editGameSubmitHandler = async (e) => {
         e.preventDefault();
 
@@ -60,8 +61,9 @@ export default function EditGame() {
                         id="title"
                         name="title"
                         placeholder="Edit game title"
+                        value={game.title}
                         onChange={onChange}
-                        required
+                        
                     />
                 </div>
                 <div className="form-group-edit">
@@ -71,8 +73,9 @@ export default function EditGame() {
                         id="genre"
                         name="genre"
                         placeholder="Edit game genre"
+                        value={game.genre}
                         onChange={onChange}
-                        required
+                        
                     />
                 </div>
                 <div className="form-group-edit">
@@ -82,8 +85,9 @@ export default function EditGame() {
                         id="imageUrl"
                         placeholder='Edit image url, make sure to have .jpg at the end of the link'
                         name="imageUrl"
+                        value={game.imageUrl}
                         onChange={onChange}
-                        required
+                        
                     />
                 </div>
                 <div className="form-group-edit">
@@ -92,8 +96,9 @@ export default function EditGame() {
                         id="summary"
                         name="summary"
                         placeholder="Edit game description/summary"
+                        value={game.summary}
                         onChange={onChange}
-                        required>
+                        >
 
                     </textarea>
                 </div>
@@ -105,8 +110,9 @@ export default function EditGame() {
                         id="MainStory"
                         name="MainStory"
                         placeholder="Edit main story time"
+                        value={game.MainStory}
                         onChange={onChange}
-                        required
+                        
                     />
                 </div>
                 <div className="form-group-edit">
@@ -115,8 +121,9 @@ export default function EditGame() {
                         id="MainSides"
                         name="MainSides"
                         placeholder="Edit main + sides time"
+                        value={game.MainSides}
                         onChange={onChange}
-                        required
+                        
                     />
                 </div>
                 <div className="form-group-edit">
@@ -126,8 +133,9 @@ export default function EditGame() {
                         id="SpeedRun"
                         name="SpeedRun"
                         placeholder="Edit speed run time"
+                        value={game.SpeedRun}
                         onChange={onChange}
-                        required
+                        
                     />
                 </div>
 
