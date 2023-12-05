@@ -14,17 +14,21 @@ export const getOne = async (gameId) => {
     return result;
 }
 
-export const getGames = async () => {
-    const query = new URLSearchParams({
-        //sortBy: `_createdOn desc`,
-        offset: 0,
-        pageSize: 3
-    });
-
-    const result = await request.get(`${baseUrl}?${query}`);
+export const getLatestGames = async () => {
+    
+    const result = await request.get(`${baseUrl}?sortBy=_createdАt`);
 
     return result;
 }
+
+export const getUserGames = async (userId) => {
+    try {
+        const result = await request.get(`http://localhost:3030/users/${userId}/videoGames`);
+        return result.games; 
+    } catch (error) {
+        throw new Error('Error fetching user games');
+    }
+};
 
 export const create = async (gameData) => {
     const result = await request.post(baseUrl, gameData);

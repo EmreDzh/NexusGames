@@ -1,0 +1,33 @@
+.game-collection-section-chart{
+    padding: 300px;
+    background-image: url('https://images5.alphacoders.com/830/830607.jpg'); 
+    background-size: cover; 
+    background-position: auto; 
+    background-repeat: no-repeat; 
+  }
+
+.games-appearing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-time-chart-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.rectangle-colletion-charts {
+    width: 500px;
+    margin: 60px; 
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid white;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+}
+
+.rectangle-colletion-charts h1{
+    color: white;
+}

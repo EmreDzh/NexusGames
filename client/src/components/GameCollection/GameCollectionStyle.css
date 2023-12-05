@@ -18,3 +18,10 @@
     align-items: center;
     gap: 20px;
 }
+
+.game-time-stat-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

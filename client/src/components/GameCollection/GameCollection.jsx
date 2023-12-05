@@ -1,8 +1,10 @@
 import './GameCollectionStyle.css'
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import * as gameService from '../../services/gameService'
 import GameCollectionList from './GameCollectionList/GameCollectionList';
+import Path from '../../paths/paths';
 
 export default function GameCollection() {
     const [games, setGames] = useState([]);
@@ -27,7 +29,9 @@ export default function GameCollection() {
 
     return (
         <div className="game-collection-section">
-            
+            <div className="game-time-stat-button-container">
+                <Link to={Path.GameTimeStats}><button>In-Depth Game Time Statistics and Tracking</button></Link>
+            </div>
             <div className="games-appearing">
                 {currentGames.map(game => (
                     <GameCollectionList key={game._id} {...game} />
