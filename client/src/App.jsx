@@ -16,6 +16,7 @@ import CreateGame from './components/CreateGame/CreateGame';
 import EditGame from './components/EditGame/EditGame';
 import GameTimeStatistics from './components/GameTimeStatistics/GameTimeStatistics';
 import GameMod from './components/GameInfo/GameMod/GameMod';
+import ModCollection from './components/ModCollection/ModCollection';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path={Path.GameInfo} element={<GameInfo />} />
           <Route path={Path.GameTimeStats} element={<GameTimeStatistics />} />
           <Route path={Path.gameMods} element={<GameMod />} />
+          <Route path={Path.gameModCollection} element={<ModCollection />} />
 
 
           <Route element={<AuthGuard />}>

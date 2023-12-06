@@ -1403,18 +1403,18 @@
 
         },
         gameMods: {
-            "1d61805c-945c-11ee-b9d1-0242ac120002":{
+            "1d61805c-945c-11ee-b9d1-0242ac120002": {
+                _ownerId: "c5903e37-ef1e-4a10-93cf-156cc8453cf1",
                 gameId: "3564027f-adcd-4425-b2c0-1253d2386c0c",
-                modName: "Custom Spartan Shield",
-                mainModImage: "https://staticdelivery.nexusmods.com/mods/4103/images/headers/215_1697498647.jpg", 
-                modImages: [
-                    "https://staticdelivery.nexusmods.com/mods/4103/images/215/215-1697498686-1821232677.png",
-                    "https://staticdelivery.nexusmods.com/mods/4103/images/215/215-1697498698-2083428676.png",
-                    "https://staticdelivery.nexusmods.com/mods/4103/images/215/215-1697498720-698953636.png",
-                ],
-                modInfo: "Just another custom Spartan Shield",
-                modVideoLink: "https://youtu.be/K0u_kAWLJOA",
-                downloadLink: "https://www.nexusmods.com/godofwar/mods/215"
+                gameModsData: {
+                    modName: "Basic Kiroshi Grey - Eye Set with Custom UI Icons",
+                    mainModImage: "https://staticdelivery.nexusmods.com/mods/3333/images/headers/11437_1701881983.jpg",
+                    modImages: "https://staticdelivery.nexusmods.com/mods/3333/images/11437/11437-1701882040-1051096334.png,https://staticdelivery.nexusmods.com/mods/3333/images/11437/11437-1701882104-976364829.png,https://staticdelivery.nexusmods.com/mods/3333/images/11437/11437-1701882115-420635903.png",
+                    modInfo: "Here's another eye set! This time it's a bunch of colour variants of my favourite Kiroshi eyes, this time with the eyes being grey, and the colour just being on the rim of the eyes :) The OG texture comes from Kala, and I redrew it by hand for the best quality; and painted each eye colour by hand too! :D",
+                    downloadLink: "https://www.nexusmods.com/cyberpunk2077/mods/11437"
+                },
+                _createdOn: 1701894403103,
+                _id: "140553a1-617d-48ea-a031-1f13883bc332"
             },
         },
         recipes: {

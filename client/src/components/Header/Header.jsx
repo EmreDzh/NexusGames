@@ -114,6 +114,7 @@ export default function Header() {
 
                 <ul className='header-ul'>
                 <li><Link to={Path.GameLib}>Game Library</Link></li>
+                <li><Link to={Path.gameModCollection}>Mods</Link></li>
                     {isAuthenticated && (
                         <>
                             <li><Link to={Path.CreateGame}>Create Game</Link></li>
