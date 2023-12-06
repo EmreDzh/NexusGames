@@ -8,7 +8,8 @@ const Path = {
     AddGameTime: "addGameTime/:gameId",
     CreateGame: "/games/create",
     EditGame: "/games/:gameId/Edit",
-    GameTimeStats: "/games/gameTimeStats"
+    GameTimeStats: "/games/gameTimeStats",
+    gameMods: "/games/:gameId/Mod"
     
 };
 

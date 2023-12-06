@@ -102,5 +102,17 @@
   color: red;
 }
 
+.mods-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2000px;
+}
+
+.mods-button-container button{
+    height: 60px;
+    width: 500px;
+}
+
 
 

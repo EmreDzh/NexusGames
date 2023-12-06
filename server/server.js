@@ -1402,6 +1402,21 @@
             },
 
         },
+        gameMods: {
+            "1d61805c-945c-11ee-b9d1-0242ac120002":{
+                gameId: "3564027f-adcd-4425-b2c0-1253d2386c0c",
+                modName: "Custom Spartan Shield",
+                mainModImage: "https://staticdelivery.nexusmods.com/mods/4103/images/headers/215_1697498647.jpg", 
+                modImages: [
+                    "https://staticdelivery.nexusmods.com/mods/4103/images/215/215-1697498686-1821232677.png",
+                    "https://staticdelivery.nexusmods.com/mods/4103/images/215/215-1697498698-2083428676.png",
+                    "https://staticdelivery.nexusmods.com/mods/4103/images/215/215-1697498720-698953636.png",
+                ],
+                modInfo: "Just another custom Spartan Shield",
+                modVideoLink: "https://youtu.be/K0u_kAWLJOA",
+                downloadLink: "https://www.nexusmods.com/godofwar/mods/215"
+            },
+        },
         recipes: {
             "3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
                 _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",

@@ -1,0 +1,73 @@
+
+.mod-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 40px;
+  }
+  
+  .mod-details-wrapper {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #4B4453;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .mod-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+
+  .mod-images img {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+
+  .mod-description {
+    margin-top: 20px;
+  }
+  
+
+  .mod-video {
+    margin-top: 20px;
+  }
+  
+
+  .mod-download {
+    margin-top: 20px;
+  }
+  
+  .mod-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .mod-create-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mod-create-button-container button{
+    width: 300px;
+    height: 40px;
+  }
+
+  .form-group label{
+    color: white;
+  }
