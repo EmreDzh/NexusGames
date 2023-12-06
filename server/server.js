@@ -1407,14 +1407,53 @@
                 _ownerId: "c5903e37-ef1e-4a10-93cf-156cc8453cf1",
                 gameId: "3564027f-adcd-4425-b2c0-1253d2386c0c",
                 gameModsData: {
-                    modName: "Basic Kiroshi Grey - Eye Set with Custom UI Icons",
-                    mainModImage: "https://staticdelivery.nexusmods.com/mods/3333/images/headers/11437_1701881983.jpg",
-                    modImages: "https://staticdelivery.nexusmods.com/mods/3333/images/11437/11437-1701882040-1051096334.png,https://staticdelivery.nexusmods.com/mods/3333/images/11437/11437-1701882104-976364829.png,https://staticdelivery.nexusmods.com/mods/3333/images/11437/11437-1701882115-420635903.png",
-                    modInfo: "Here's another eye set! This time it's a bunch of colour variants of my favourite Kiroshi eyes, this time with the eyes being grey, and the colour just being on the rim of the eyes :) The OG texture comes from Kala, and I redrew it by hand for the best quality; and painted each eye colour by hand too! :D",
-                    downloadLink: "https://www.nexusmods.com/cyberpunk2077/mods/11437"
+                    modName: "blades",
+                    mainModImage: "https://staticdelivery.nexusmods.com/mods/4103/images/headers/208_1693835157.jpg",
+                    modImages: "https://staticdelivery.nexusmods.com/mods/4103/images/thumbnails/208/208-1693835184-1904096791.png",
+                    modInfo: "blades of chaos, hello everyone this is max level of  blades of chaos texture pack the use is same copy and paste the files to folder pc_le and for the json file just add ../../patch/pc_le/blades",
+                    downloadLink: "https://www.nexusmods.com/godofwar/mods/208"
                 },
                 _createdOn: 1701894403103,
                 _id: "140553a1-617d-48ea-a031-1f13883bc332"
+            },
+            "814ccdd4-9483-11ee-b9d1-0242ac120002": {
+                _ownerId: "c5903e37-ef1e-4a10-93cf-156cc8453cf1",
+                gameId: "c64db398-91cd-487c-b900-86058c0422f8",
+                gameModsData: {
+                    modName: "Virtual Atelier",
+                    mainModImage: "https://staticdelivery.nexusmods.com/mods/3333/images/headers/2987_1675615350.jpg",
+                    modImages: "https://staticdelivery.nexusmods.com/mods/3333/images/2987/2987-1645248687-1023673874.png,https://staticdelivery.nexusmods.com/mods/3333/images/2987/2987-1647962030-1796354772.png,https://staticdelivery.nexusmods.com/mods/3333/images/2987/2987-1697541934-1929448025.png",
+                    modInfo: "A framework for other modders, that allows them to add virtual stores in-game for their modded clothes items.",
+                    downloadLink: "https://www.nexusmods.com/cyberpunk2077/mods/2987"
+                },
+                _createdOn: 1701894403103,
+                _id: "c36d6dea-9483-11ee-b9d1-0242ac120002"
+            },
+            "cf1a1620-9483-11ee-b9d1-0242ac120002": {
+                _ownerId: "c5903e37-ef1e-4a10-93cf-156cc8453cf1",
+                gameId: "daf55cd4-9aa1-4b7a-82a9-fbdb74aaa84b",
+                gameModsData: {
+                    modName: "0A",
+                    mainModImage: "https://staticdelivery.nexusmods.com/mods/952/images/headers/8668_1701486231.jpg",
+                    modImages: "https://staticdelivery.nexusmods.com/mods/952/images/8668/8668-1701486252-624383009.png,https://staticdelivery.nexusmods.com/mods/952/images/8668/8668-1701486253-1569268987.png,https://staticdelivery.nexusmods.com/mods/952/images/8668/8668-1701486262-1853851878.png",
+                    modInfo: "Replaced the default armor",
+                    downloadLink: "https://www.nexusmods.com/witcher3/mods/8668"
+                },
+                _createdOn: 1701894403103,
+                _id: "d2850388-9483-11ee-b9d1-0242ac120002"
+            },
+            "30db9d66-9484-11ee-b9d1-0242ac120002": {
+                _ownerId: "c5903e37-ef1e-4a10-93cf-156cc8453cf1",
+                gameId: "f1fe0cf6-8df7-11ee-b9d1-0242ac120002",
+                gameModsData: {
+                    modName: "Elden Ring Item and Enemy Randomizer",
+                    mainModImage: "https://staticdelivery.nexusmods.com/mods/4333/images/headers/428_1653808813.jpg",
+                    modImages: "https://staticdelivery.nexusmods.com/mods/4333/images/428/428-1648446731-207927940.jpeg,https://staticdelivery.nexusmods.com/mods/4333/images/428/428-1653808795-1722614054.jpeg,https://staticdelivery.nexusmods.com/mods/4333/images/428/428-1653808769-587829976.jpeg",
+                    modInfo: "Randomizes bosses, enemies, and items, including key items and shops",
+                    downloadLink: "https://www.nexusmods.com/eldenring/mods/428"
+                },
+                _createdOn: 1701894403103,
+                _id: "359fdd44-9484-11ee-b9d1-0242ac120002"
             },
         },
         recipes: {
