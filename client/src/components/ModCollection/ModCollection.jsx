@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import * as gameService from '../../services/gameService'
 import * as gameModService from '../../services/modsService'
-import GameModList from '../GameInfo/GameMod/GameModList/GameModList';
+import ModCollectionList from './ModCollectionList/ModCollectionList';
 
 export default function ModCollection() {
     const [games, setGames] = useState([]);
@@ -61,7 +61,7 @@ export default function ModCollection() {
             <h3>Mods for selected game:</h3>
             <div className="mod-details-container">
                 {currentMods.map(mod => (
-                    <GameModList key={mod._id} {...mod} />
+                    <ModCollectionList key={mod._id} {...mod} />
                 ))}
             </div>
 
