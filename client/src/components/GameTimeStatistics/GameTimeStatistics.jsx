@@ -1,8 +1,9 @@
 import './GameTimeStatisticsStyle.css';
 import { useEffect, useState } from 'react';
-import Chart from 'chart.js/auto';
 import { useNavigate } from 'react-router-dom';
 import Path from '../../paths/paths';
+
+import Chart from 'chart.js/auto';
 
 import * as gameService from '../../services/gameService';
 

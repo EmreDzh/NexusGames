@@ -2,14 +2,17 @@ import { useEffect, useState } from 'react';
 
 import * as gameService from '../../services/gameService'
 import * as gameModService from '../../services/modsService'
+import GameModList from '../GameInfo/GameMod/GameModList/GameModList';
 
 export default function ModCollection() {
     const [games, setGames] = useState([]);
     const [mods, setMods] = useState([]);
     const [selectedGameId, setSelectedGameId] = useState('');
 
+    const [currentPage, setCurrentPage] = useState(1);
+    const modsPerPage = 2;
+
     useEffect(() => {
-        // Fetch all games
         gameService.getAll()
             .then(result => setGames(result))
             .catch(err => {
@@ -17,10 +20,8 @@ export default function ModCollection() {
             });
     }, []);
 
-    console.log(selectedGameId);
 
     useEffect(() => {
-        // Fetch mods for the selected game
         if (selectedGameId) {
             gameModService.getAllMods()
                 .then((gameMods) => {
@@ -31,11 +32,21 @@ export default function ModCollection() {
         }
     }, [selectedGameId]);
 
-    console.log(mods);
 
     const handleGameChange = (event) => {
         setSelectedGameId(event.target.value);
+        setCurrentPage(1);
     };
+
+    const indexOfLastMod = currentPage * modsPerPage;
+    const indexOfFirstMod = indexOfLastMod - modsPerPage;
+    const currentMods = mods.slice(indexOfFirstMod, indexOfLastMod);
+
+    // Logic to change page
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
+
 
     return (
         <div>
@@ -48,12 +59,25 @@ export default function ModCollection() {
             </select>
 
             <h3>Mods for selected game:</h3>
-            <ul>
-                {mods.map(mod => (
-                    <li key={mod._id}>{mod.gameModsData.modName}</li>
-                    // Display other mod details as needed
+            <div className="mod-details-container">
+                {currentMods.map(mod => (
+                    <GameModList key={mod._id} {...mod} />
                 ))}
-            </ul>
+            </div>
+
+            {mods.length > modsPerPage && (
+                <div className="pagination">
+                    {Array.from({ length: Math.ceil(mods.length / modsPerPage) }, (_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => paginate(index + 1)}
+                            className={currentPage === index + 1 ? 'active' : ''}
+                        >
+                            {index + 1}
+                        </button>
+                    ))}
+                </div>
+            )}
         </div>
     );
 }

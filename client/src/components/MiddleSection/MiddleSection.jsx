@@ -25,7 +25,6 @@ export default function MiddleSection() {
         navigate(Path.GameLib)
     }
     
- 
     return (
         <>
             <div className="middle-section">
