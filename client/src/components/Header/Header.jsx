@@ -17,7 +17,7 @@ export default function Header() {
 
     const [matchingGames, setMatchingGames] = useState([]);
     const [showModal, setShowModal] = useState(false);
-    const [selectedGameId, setSelectedGameId] = useState(null);
+    
 
     useEffect(() => {
         gameService.getAll()
@@ -66,7 +66,6 @@ export default function Header() {
     };
 
     const selectGame = (gameId) => {
-        setSelectedGameId(gameId);
         navigate(`${Path.GameLib}/${gameId}`);
         setSearchQuery('');
         setShowModal(false);
