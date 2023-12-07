@@ -36,7 +36,8 @@ To run the application, follow these steps:
 
     https://nexusgames-bde05.web.app/
 
-    As of right now you will need to start the back end server manually before accessing the Firebase Cloud webpage for it to function properly
+    As of right now you will need to start the back end server manually before accessing the Firebase Cloud 
+    webpage, see at step 2 - Backend Setup
 
 
 
