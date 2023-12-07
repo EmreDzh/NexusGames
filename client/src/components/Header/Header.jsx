@@ -69,8 +69,7 @@ export default function Header() {
         setShowModal(false);
     };
 
-    console.log(userId);
-
+   
 
     return (
         <div className="header-section">

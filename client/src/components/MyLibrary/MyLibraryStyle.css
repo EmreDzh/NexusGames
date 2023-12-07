@@ -1,0 +1,24 @@
+.my-library-section-list{
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+
+.collection-h2{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.my-library-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}

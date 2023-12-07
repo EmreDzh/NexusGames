@@ -1,11 +1,13 @@
 import './CreateGameStyle.css'
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as gameService from '../../services/gameService'
 import Path from '../../paths/paths';
+import AuthContext from '../../contexts/authContext';
 
 export default function CreateGame(){
     const navigate = useNavigate();
+    const { userId } = useContext(AuthContext);
 
     const [showGameTimeFields, setShowGameTimeFields] = useState(false);
 
@@ -17,7 +19,7 @@ export default function CreateGame(){
         try {
             await gameService.create(gameData);
 
-            navigate(Path.GameLib);
+            navigate(`/library/${userId}`);
         } catch(err){
             console.log(err);
         }

@@ -11,6 +11,16 @@
     z-index: 999;
 }
 
+.mod-details-wrapper {
+    text-align: center; 
+}
+
+
+.mod-details-wrapper > * {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
 .modal-content-mod {
     position: relative;
     display: flex;
