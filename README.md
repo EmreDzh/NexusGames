@@ -32,6 +32,8 @@ To run the application, follow these steps:
 
         node server.js
 
+# Firebase Cloud Implementation
+
 3. The Frontend part of the Project was deployed in the Firebase Cloud service, link to the website:
 
     https://nexusgames-bde05.web.app/
