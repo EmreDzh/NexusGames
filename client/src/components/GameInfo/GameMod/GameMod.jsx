@@ -71,24 +71,24 @@ export default function GameMod() {
                                 <h3>Create a Mod: https://www.nexusmods.com for more!</h3>
                                 <form onSubmit={handleModSubmit}>
                                     <div className="form-group">
-                                        <label htmlFor="modName">Mod Name:</label>
+                                        <label htmlFor="modName">Mod Name</label>
                                         <input type="text" id="modName" name="modName" required />
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="mainModImage">Main Mod Image URL:</label>
+                                        <label htmlFor="mainModImage">Main Mod Image URL</label>
                                         <input type="text" id="mainModImage" name="mainModImage" required />
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="modImages">Mod Images (comma-separated URLs if you add multiple images!):</label>
+                                        <label htmlFor="modImages">Mod Images (comma-separated URLs if you add multiple images!)</label>
                                         <input type="text" id="modImages" name="modImages" required />
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="modInfo">Mod Info:</label>
+                                        <label htmlFor="modInfo">Mod Description</label>
                                         <input type='text' id="modInfo" name="modInfo" required></input>
                                     </div>
 
                                     <div className="form-group">
-                                        <label htmlFor="downloadLink">Download Link from nexusmods!:</label>
+                                        <label htmlFor="downloadLink">Download Link from Nexusmods!</label>
                                         <input type="text" id="downloadLink" name="downloadLink" required />
                                     </div>
                                     <button className="game-time-button" type="submit">Submit</button>
