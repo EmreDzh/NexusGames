@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 export default function GameTimeInfo({ title, MainStory, MainSides, SpeedRun }) {
     const { gameId } = useParams();
-    const gamesPerPage = 4;
+    const gamesPerPage = 3;
 
     const [gameTime, setGameTime] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -35,7 +35,6 @@ export default function GameTimeInfo({ title, MainStory, MainSides, SpeedRun }) 
 
     return (
         <>
-
             <div className="game-info-rectangle">
                 <div className="info">
                     <div className="main-story-info">

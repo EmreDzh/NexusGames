@@ -137,9 +137,7 @@ export default function GameInfo() {
                     </div>
 
                 </div>
-
             </div>
-
 
             {showGameTimeModal && (
                 <div className="modal" id="gameTimeModal">
@@ -151,15 +149,16 @@ export default function GameInfo() {
                                 <form onSubmit={handleGameTimeSubmit}>
                                     <div className="form-group">
                                         <label htmlFor="mainStory">Main Story:</label>
-                                        <input type="text" id="mainStory" name="mainStory" />
+                                        <input type="text" id="mainStory" name="mainStory" required />
+                                        
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="mainSides">Main + Sides:</label>
-                                        <input type="text" id="mainSides" name="mainSides" />
+                                        <input type="text" id="mainSides" name="mainSides" required />
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="speedRun">Speed Run:</label>
-                                        <input type="text" id="speedRun" name="speedRun" />
+                                        <input type="text" id="speedRun" name="speedRun" required />
                                     </div>
                                     <button className="game-time-button" type="submit">Submit</button>
                                 </form>
