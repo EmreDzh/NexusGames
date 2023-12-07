@@ -18,7 +18,7 @@ To run the application, follow these steps:
 
         npm run dev
 
-    # Backend Setup
+### Backend Setup
 
         Navigate to Server Directory: Go to the server directory in your terminal:
 
@@ -35,6 +35,10 @@ To run the application, follow these steps:
 ## Features
 
     Game Selection: Browse through a variety of games available in the collection.
+
+    Game Statistics: Overview games how long to beat statistics
+
+    Game Mods: Overview different modification for the game
 
     Interactive UI: Enjoy a visually appealing and user-friendly interface.
 
