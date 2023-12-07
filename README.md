@@ -32,6 +32,10 @@ To run the application, follow these steps:
 
         node server.js
 
+# The Frontend part of the Project was deployed in the Firebase Cloud service, link to the website:
+
+
+
 # Features
 
     Game Selection: Browse through a variety of games available in the collection.
@@ -52,7 +56,9 @@ To run the application, follow these steps:
 
     Node.js
 
-    Express
+    Firebase CLI for Deploying the Project
 
-# Back End Server
-    The Back End was used from https://github.com/softuni-practice-server/softuni-practice-server 
+# Back End Server Info
+    The Back End was used from https://github.com/softuni-practice-server/softuni-practice-server - a practice server made from softuni.bg
+
+
