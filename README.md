@@ -66,6 +66,7 @@ To run the application, follow these steps:
     Firebase CLI for Deploying the Project
 
 # Back End Server Info
-    The Back End was used from https://github.com/softuni-practice-server/softuni-practice-server - a practice server made from softuni.bg
+    The Back End was used from https://github.com/softuni-practice-server/softuni-practice-server 
+    a practice server made from softuni.bg
 
 
