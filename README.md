@@ -14,23 +14,23 @@ To run the application, follow these steps:
 
    npm install
 
-## Start the Application: Run the following command:
+    # Start the Application: Run the following command:
 
-npm run dev
+        npm run dev
 
-## Backend Setup
+    # Backend Setup
 
-Navigate to Server Directory: Go to the server directory in your terminal:
+        Navigate to Server Directory: Go to the server directory in your terminal:
 
-    cd server
+        cd server
 
-## Install Server Dependencies: Run:
+    # Install Server Dependencies: Run:
 
-    npm install
+        npm install
 
-## Start the Server: Execute the following command:
+    # Start the Server: Execute the following command:
 
-    node server.js
+        node server.js
 
 ## Features
 
