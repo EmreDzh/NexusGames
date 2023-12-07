@@ -97,7 +97,7 @@ export default function MyLibrary() {
                                 </>
                             ) : (
                                 <>
-                                    <h2 className='collection-h2'>You don't have any created mods yet!</h2>
+                                    <h2 className='collection-h2'>You don't have any created mods yet! View the game library and chose a game to create a mod!</h2>
                                     <div className="collection-button">
                                         <button onClick={() => navigate(Path.GameLib)}>Click here to view the game library</button>
                                     </div>

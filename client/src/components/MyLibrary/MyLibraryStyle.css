@@ -21,4 +21,12 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
+    width: 300pxpx;
+
+}
+
+.collection-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

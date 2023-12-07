@@ -110,7 +110,7 @@ export default function Header() {
                 )}
 
                 <ul className='header-ul-list'>
-                    <li><Link to={Path.GameLib}>Game Library</Link></li>
+                    <li><Link to={Path.GameLib}>Game Collection</Link></li>
                     <li><Link to={Path.gameModCollection}>Mods</Link></li>
                 </ul>
 

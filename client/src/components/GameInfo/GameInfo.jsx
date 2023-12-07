@@ -73,7 +73,7 @@ export default function GameInfo() {
         if (hasConfirmed) {
             await gameService.remove(gameId);
 
-            navigate(Path.GameLib)
+            navigate(`/library/${userId}`)
         }
     }
 
