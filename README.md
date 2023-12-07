@@ -65,6 +65,8 @@ To run the application, follow these steps:
 
     Node.js
 
+    Chart.js
+
     Firebase CLI for Deploying the Project
 
 # Back End Server Info
