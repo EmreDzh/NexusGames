@@ -4,7 +4,19 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 40px;
+  }
+
+  .mod-create-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; 
+  }
+
+  .mod-list-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .mod-details-wrapper {
@@ -17,6 +29,7 @@
   }
   
 
+
   .mod-main-image {
     width: 100%;
     height: auto;
@@ -25,7 +38,6 @@
   
 
   .mod-images img {
-    display: flex;
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -70,4 +82,12 @@
 
   .form-group label{
     color: white;
+  }
+
+  .pagination-mod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 30px;
   }

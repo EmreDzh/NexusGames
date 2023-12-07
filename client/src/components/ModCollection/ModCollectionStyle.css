@@ -1,0 +1,53 @@
+.mod-collection-container{
+    padding: 100px;
+    background-image: url('https://images5.alphacoders.com/830/830607.jpg'); 
+    background-size: cover; 
+    background-position: auto; 
+    background-repeat: no-repeat; 
+    
+}
+
+.mod-collection-titles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mod-collection-select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.mod-collection-select select{
+    width: 230px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #f44336;
+}
+
+.button-to-mod-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.no-game-container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-to-mod-container button{
+    width: 300px;
+    height: 60px;
+}
+
+.mod-collection-list-container-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}

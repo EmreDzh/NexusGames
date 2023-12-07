@@ -84,9 +84,7 @@ export default function MiddleSection() {
                 <article>
                     <h3>Speed Run</h3>
                     <p>The fastest way possible to finish the game, that sometimes require to break the game or to bypass some artificial walls within the games world etc.</p>
-                    <p className="sign-off">
-                        NexusGames: 2023 - 2023
-                    </p>
+
                 </article>
             </footer>
 

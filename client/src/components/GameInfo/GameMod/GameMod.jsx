@@ -14,7 +14,7 @@ export default function GameMod() {
     const [mods, setMods] = useState([]);
     const [showModModal, setShowModModal] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    
+
 
     const modsPerPage = 1;
     const indexOfLastMod = currentPage * modsPerPage;
@@ -34,7 +34,7 @@ export default function GameMod() {
             .catch(error => console.error('Error fetching game times:', error));
     }, [gameId]);
 
-    
+
 
 
     const toggleModModal = () => {
@@ -62,23 +62,6 @@ export default function GameMod() {
 
     return (
         <>
-            {isAuthenticated && (
-                
-                <div className='mod-create-button-container'>
-                    {mods.length === 0 && (
-                    <button onClick={toggleModModal}>Be the first to create a Mod for this game!</button>
-                    )}
-                    {mods.length !== 0 && (
-                    <button onClick={toggleModModal}>Create a Mod!</button>
-                    )}
-                    
-                </div>
-            )}
-            {!isAuthenticated && (
-                <div className='mod-create-button-container'>
-                    <button onClick={() => navigate(Path.Login)}>Login to Create a Mod!</button>
-                </div>
-            )}
 
             {showModModal && (
                 <div className="modal" id="modModal">
@@ -104,7 +87,7 @@ export default function GameMod() {
                                         <label htmlFor="modInfo">Mod Info:</label>
                                         <input type='text' id="modInfo" name="modInfo" required></input>
                                     </div>
-                            
+
                                     <div className="form-group">
                                         <label htmlFor="downloadLink">Download Link from nexusmods!:</label>
                                         <input type="text" id="downloadLink" name="downloadLink" required />
@@ -118,13 +101,33 @@ export default function GameMod() {
             )}
 
             <div className="mod-details-container">
-                {currentMods.map(mod => (
-                    <GameModList key={mod._id} {...mod} />
-                ))}
-            </div>
+                <div className="mod-details-place">
+                    {isAuthenticated && (
 
-            {mods.length > modsPerPage && (
-                    <div className="pagination">
+                        <div className='mod-create-button-container'>
+                            {mods.length === 0 && (
+                                <button onClick={toggleModModal}>Be the first to create a Mod for this game!</button>
+                            )}
+                            {mods.length !== 0 && (
+                                <button onClick={toggleModModal}>Create a Mod!</button>
+                            )}
+
+                        </div>
+                    )}
+                    {!isAuthenticated && (
+                        <div className='mod-create-button-container'>
+                            <button onClick={() => navigate(Path.Login)}>Login to Create a Mod!</button>
+                        </div>
+                    )}
+                    <div className="mod-list-container">
+
+                        {currentMods.map(mod => (
+                            <GameModList key={mod._id} {...mod} />
+                        ))}
+                    </div>
+
+                    {mods.length > modsPerPage && (
+                    <div className="pagination-mod">
                         {Array.from({ length: Math.ceil(mods.length / modsPerPage) }, (_, index) => (
                             <button
                                 key={index}
@@ -135,7 +138,15 @@ export default function GameMod() {
                             </button>
                         ))}
                     </div>
-            )}
+                )}
+
+                </div>
+
+                
+
+            
+            </div>
+
         </>
 
     );
