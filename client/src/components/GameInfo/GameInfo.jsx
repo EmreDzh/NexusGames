@@ -1,5 +1,5 @@
 import './GameInfoStyle.css'
-import './GameInfoCreateStyle.css'
+import './GameInfoModalStyle.css'
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 
@@ -81,57 +81,65 @@ export default function GameInfo() {
     return (
 
         <div className="game-info-section">
-            <div className="game-info-buttons">
-                {isAuthenticated && (
-                    <>
-                        <button onClick={toggleGameTimeModal}>Submit your playtime!</button>
-                        {userId === game._ownerId && (
-                            <>
-                                <Link to={pathToUrl(Path.EditGame, { gameId })}><button>Edit Game</button></Link>
+            <div className="game-info-holder">
 
-                                <button onClick={handleDelete}>Delete Game</button>
-                            </>
-                        )}
-                    </>
-                )}
-                {!isAuthenticated && (
-                    <button onClick={navigateToLoginHandler}>Login to Submit your game time!</button>
-                )}
+                <div className="game-info-buttons">
+                    {isAuthenticated && (
+                        <>
+                            <button onClick={toggleGameTimeModal}>Submit your playtime!</button>
+                            {userId === game._ownerId && (
+                                <>
+                                    <Link to={pathToUrl(Path.EditGame, { gameId })}><button>Edit Game</button></Link>
 
-            </div>
-            <div className="game-info-container">
-
-                <div className="game-info-left">
-                    <img
-                        src={game.imageUrl}
-                        alt="Game Cover"
-                        className="game-image"
-                    />
-                </div>
-
-                <GameTimeInfo key={game._id} {...game} />
-
-                <article>
-                    <div className="game-info-box">
-                        <p>
-                            {game.summary &&
-                                (showFullSummary
-                                    ? game.summary
-                                    : `${game.summary.slice(0, 150)}... `)}
-                            {game.summary && (
-                                <button className="read-more" onClick={toggleSummary}>
-                                    {showFullSummary ? 'Read Less' : 'Read More'}
-                                </button>
+                                    <button onClick={handleDelete}>Delete Game</button>
+                                </>
                             )}
-                        </p>
-                        <p className='genre-p'>Genre: {game.genre}</p>
+                        </>
+                    )}
+                    {!isAuthenticated && (
+                        <button onClick={navigateToLoginHandler}>Login to Submit your game time!</button>
+                    )}
+
+                </div>
+                <div className="game-info-container">
+                    <div className="game-info-holder-list">
+                        <div className="game-info-left">
+                            <img
+                                src={game.imageUrl}
+                                alt="Game Cover"
+                                className="game-image"
+                            />
+                        </div>
+
+                        <GameTimeInfo key={game._id} {...game} />
+
+                        <article>
+                            <div className="game-info-box">
+                                <p>
+                                    {game.summary &&
+                                        (showFullSummary
+                                            ? game.summary
+                                            : `${game.summary.slice(0, 150)}... `)}
+                                    {game.summary && (
+                                        <button className="read-more" onClick={toggleSummary}>
+                                            {showFullSummary ? 'Read Less' : 'Read More'}
+                                        </button>
+                                    )}
+                                </p>
+                                <p className='genre-p'>Genre: {game.genre}</p>
+                            </div>
+                        </article>
+
                     </div>
-                </article>
-                <div className='mods-button-container'>
-                    <Link to={pathToUrl(Path.gameMods, {gameId})}><button>Check out the mods for {game.title}!</button></Link>
+
+                    <div className='mods-button-container'>
+                        <Link to={pathToUrl(Path.gameMods, { gameId })}><button>Check out the mods for {game.title}!</button></Link>
+                    </div>
+
                 </div>
 
             </div>
+
 
             {showGameTimeModal && (
                 <div className="modal" id="gameTimeModal">

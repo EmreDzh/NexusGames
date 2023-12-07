@@ -72,8 +72,8 @@ export default function Header() {
         setShowModal(false);
     };
 
-   
-    
+
+
     return (
         <div className="header-section">
             <div className="header-container">
@@ -107,14 +107,18 @@ export default function Header() {
                             <div className='close-button-modal-container'>
                                 <button className="close-button-modal" onClick={() => setShowModal(false)}>Close</button>
                             </div>
-                            
+
                         </div>
                     </div>
                 )}
 
+                <ul className='header-ul-list'>
+                    <li><Link to={Path.GameLib}>Game Library</Link></li>
+                    <li><Link to={Path.gameModCollection}>Mods</Link></li>
+                </ul>
+
                 <ul className='header-ul'>
-                <li><Link to={Path.GameLib}>Game Library</Link></li>
-                <li><Link to={Path.gameModCollection}>Mods</Link></li>
+
                     {isAuthenticated && (
                         <>
                             <li><Link to={Path.CreateGame}>Create Game</Link></li>
@@ -133,6 +137,8 @@ export default function Header() {
 
 
                 </ul>
+
+
             </div>
         </div>
     );

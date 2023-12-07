@@ -79,7 +79,6 @@ export default function GameTimeInfo({ title, MainStory, MainSides, SpeedRun }) 
 
                         </div>
 
-
                     ))}
                     <div className="pagination">
                         {gameTime.length !== 0 &&
