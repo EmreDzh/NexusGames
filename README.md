@@ -32,11 +32,11 @@ To run the application, follow these steps:
 
         node server.js
 
-## The Frontend part of the Project was deployed in the Firebase Cloud service, link to the website:
+3. The Frontend part of the Project was deployed in the Firebase Cloud service, link to the website:
 
     https://nexusgames-bde05.web.app/
 
-    As of right now you will need to start the back end server manually before accessing the Firebase Cloud 
+    As of right now you will need to start the back end server manually on your local device before accessing the Firebase Cloud 
     webpage, see at step 2 - Backend Setup
 
 
