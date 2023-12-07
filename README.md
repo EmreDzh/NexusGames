@@ -34,6 +34,8 @@ To run the application, follow these steps:
 
 ## The Frontend part of the Project was deployed in the Firebase Cloud service, link to the website:
 
+    https://nexusgames-bde05.web.app/
+
 
 
 # Features
