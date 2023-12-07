@@ -21,7 +21,7 @@ To run the application, follow these steps:
 
     # Backend Setup
 
-        Navigate to Server Directory: Go to the server directory in your terminal:
+    Navigate to Server Directory: Go to the server directory in your terminal:
 
         cd server
 
