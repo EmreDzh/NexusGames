@@ -51,6 +51,8 @@ To run the application, follow these steps:
 
     Game Mods: Overview different modification for the game
 
+    User's Library: A Special section for the user to view and manages his created games/mods
+
     Interactive UI: Enjoy a visually appealing and user-friendly interface.
 
     Responsive Design: Created only with html and css with no libraries like bootstrap etc.
