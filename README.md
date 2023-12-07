@@ -8,18 +8,17 @@ NexusGames is a React Vite project designed to showcase a collection of games, s
 
 To run the application, follow these steps:
 
+# Front End Setup
 
 1. Install Dependencies: **In the client terminal**, run:
     
-    # Front End Setup
-
         npm install
 
     ## Start the Application: Run the following command:
 
         npm run dev
 
-    # Backend Setup
+# Backend Setup
 
 2. **Navigate to Server Directory:** Go to the server directory in your terminal:
 
