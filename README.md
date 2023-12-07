@@ -1,6 +1,6 @@
 # NexusGames
 
-![Project Image](client\public\images\gaming-logo.png)
+![Project Image](client/public/images/gaming-logo.png)
 
 NexusGames is a React Vite project designed to showcase a collection of games, statistics and mods with a sleek and interactive user interface.
 
