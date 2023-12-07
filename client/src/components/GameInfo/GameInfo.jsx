@@ -113,7 +113,7 @@ export default function GameInfo() {
 
                         <GameTimeInfo key={game._id} {...game} />
 
-                        <article>
+                        <article className='game-info-box-article'>
                             <div className="game-info-box">
                                 <p>
                                     {game.summary &&
@@ -133,7 +133,7 @@ export default function GameInfo() {
                     </div>
 
                     <div className='mods-button-container'>
-                        <Link to={pathToUrl(Path.gameMods, { gameId })}><button>Check out the mods for {game.title}!</button></Link>
+                        <Link to={pathToUrl(Path.gameMods, { gameId })}><button>Check out the Mods for {game.title}!</button></Link>
                     </div>
 
                 </div>

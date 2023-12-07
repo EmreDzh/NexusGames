@@ -16,3 +16,9 @@ export const create = async (gameId, gameModsData) => {
 
     return newMod;
 };
+
+export const edit = async (modId, modData) => {
+    const result = await request.put(`${baseUrl}/${modId}`, modData);
+
+    return result;
+};

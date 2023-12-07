@@ -29,10 +29,24 @@
     cursor: pointer;
 }
 
-
-
 .modal-content-mod img {
     max-width: 100%;
     max-height: 100%;
     
 }
+
+.mod-download {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mod-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+

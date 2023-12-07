@@ -35,25 +35,24 @@ export default function GameMod() {
     }, [gameId]);
 
 
-
-
     const toggleModModal = () => {
         setShowModModal(!showModModal);
     };
 
     const handleModSubmit = async (event) => {
         event.preventDefault();
-
         const modData = Object.fromEntries(new FormData(event.currentTarget));
-
+    
         try {
             await gameModService.create(gameId, modData);
+            const updatedMods = await gameModService.getAllMods();
+            const matchingMods = updatedMods.filter(mod => mod.gameId === gameId);
+            setMods(matchingMods);
             toggleModModal(!showModModal);
-            window.location.reload();
         } catch (err) {
             console.log(err);
         }
-    }
+    };
 
 
     const handlePageChange = (pageNumber) => {
