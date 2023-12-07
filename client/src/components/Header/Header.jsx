@@ -4,12 +4,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import AuthContext from '../../contexts/authContext';
 import { useContext, useState, useEffect } from 'react';
 import * as gameService from '../../services/gameService'
+import { pathToUrl } from '../../utils/pathUtils';
 
 export default function Header() {
-    const {
-        isAuthenticated,
-        username
-    } = useContext(AuthContext);
+    const { userId, isAuthenticated } = useContext(AuthContext);
 
     const [searchQuery, setSearchQuery] = useState('');
     const [games, setGames] = useState([]);
@@ -71,6 +69,7 @@ export default function Header() {
         setShowModal(false);
     };
 
+    console.log(userId);
 
 
     return (
@@ -120,6 +119,7 @@ export default function Header() {
 
                     {isAuthenticated && (
                         <>
+                            <li><Link to={`/library/${userId}`}>My Libray</Link></li>
                             <li><Link to={Path.CreateGame}>Create Game</Link></li>
                             <li><Link className='header-links' to={Path.Logout}>Logout</Link></li>
                             <div className='user-name'>Welcome, Choom!</div>

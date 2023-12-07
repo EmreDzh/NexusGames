@@ -10,7 +10,8 @@ const Path = {
     EditGame: "/games/:gameId/Edit",
     GameTimeStats: "/games/gameTimeStats",
     gameMods: "/games/:gameId/Mod",
-    gameModCollection: "/modCollection"
+    gameModCollection: "/modCollection",
+    userLibrary: "/library/:ownerId"
     
 };
 

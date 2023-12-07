@@ -17,6 +17,7 @@ import EditGame from './components/EditGame/EditGame';
 import GameTimeStatistics from './components/GameTimeStatistics/GameTimeStatistics';
 import GameMod from './components/GameInfo/GameMod/GameMod';
 import ModCollection from './components/ModCollection/ModCollection';
+import MyLibrary from './components/MyLibrary/MyLibrary';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             <Route path={Path.CreateGame} element={<CreateGame />} />
             <Route path={Path.EditGame} element={<EditGame />} />
             <Route path={Path.Logout} element={<Logout />} />
+            <Route path={Path.userLibrary} element={<MyLibrary />} />
           </Route>
 
         </Routes>
