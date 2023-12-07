@@ -32,7 +32,7 @@ To run the application, follow these steps:
 
         node server.js
 
-# The Frontend part of the Project was deployed in the Firebase Cloud service, link to the website:
+## The Frontend part of the Project was deployed in the Firebase Cloud service, link to the website:
 
 
 
