@@ -120,10 +120,10 @@ export default function GameInfo() {
                             <div className="game-info-box">
                                 <p>
                                     {game.summary &&
-                                        (showFullSummary
+                                        ((showFullSummary || game.summary.length <= 150) 
                                             ? game.summary
                                             : `${game.summary.slice(0, 150)}... `)}
-                                    {game.summary && (
+                                    {game.summary && game.summary.length > 150 && (
                                         <button className="read-more" onClick={toggleSummary}>
                                             {showFullSummary ? 'Read Less' : 'Read More'}
                                         </button>
@@ -153,7 +153,7 @@ export default function GameInfo() {
                                     <div className="form-group">
                                         <label htmlFor="mainStory">Main Story:</label>
                                         <input type="text" id="mainStory" name="mainStory" required />
-                                        
+
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="mainSides">Main + Sides:</label>
