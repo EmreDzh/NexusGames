@@ -1354,7 +1354,7 @@
             "e0072112-92ad-11ee-b9d1-0242ac120002": {
                 title: "God of War II",
                 genre: "Fantasy",
-                imageUrl: "https://cdn.kobo.com/book-images/d81e4cdd-822e-48da-8d0c-05ed1713ece6/1200/1200/False/god-of-war-volume-2-fallen-god.jpg",
+                imageUrl: "https://cdn.mos.cms.futurecdn.net/a22a9cca4d9f506279fee868319bdec1.jpg",
                 summary: "God of War II continues the story of Kratos, with him wielding his newly-found godlike powers, much to the dismay and fear of the other gods.",
                 MainStory: "12 Hours",
                 MainSides: "13 Hours",
