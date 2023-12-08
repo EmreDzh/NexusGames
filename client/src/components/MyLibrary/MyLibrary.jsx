@@ -18,6 +18,7 @@ export default function MyLibrary() {
     const [currentPageGames, setCurrentPageGames] = useState(1);
     const [currentPageMods, setCurrentPageMods] = useState(1);
     const [viewGames, setViewGames] = useState(true);
+   
     const gamesPerPage = 3;
     const modsPerPage = 1;
 

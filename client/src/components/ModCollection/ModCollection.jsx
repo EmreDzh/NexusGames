@@ -55,9 +55,7 @@ export default function ModCollection() {
         setCurrentPage(pageNumber);
     };
 
-
-
-
+    
     return (
         <div className='mod-collection-container'>
             <div className="mod-collection-titles">
@@ -79,7 +77,7 @@ export default function ModCollection() {
                         <h1>theres no mods currently for this game</h1>
                         {isAuthenticated && (
                             <div className="button-to-mod-container">
-                                <button onClick={() => navigate(pathToUrl(Path.gameMods, { selectedGameId }))}>Click here to create a mod!</button>
+                                <button onClick={() => navigate(`/games/${selectedGameId}/Mod`)}>Click here to create a mod!</button>
                             </div>
                         )}
                         {!isAuthenticated && (
