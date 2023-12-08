@@ -103,6 +103,9 @@ export default function GameInfo() {
                 </div>
                 <div className="game-info-container">
                     <div className="game-info-holder-list">
+                        <div className='game-info-h2'>
+                            <h2>{game.title}</h2>
+                        </div>
                         <div className="game-info-left">
                             <img
                                 src={game.imageUrl}
