@@ -23,5 +23,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
+}
+
+.game-time-stat-button-container button{
+    width: 380px;
+    height: 60px;
+    font-size: 18px;
 }

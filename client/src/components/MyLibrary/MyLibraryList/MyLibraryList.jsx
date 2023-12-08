@@ -12,7 +12,7 @@ export default function MyLibraryList({_id, title, imageUrl, MainStory, MainSide
         <div className="game-colletion-list-section">
             <div className="game-colletion-container">
                 <article>
-                    <div className="rectangle-colletion">
+                    <div className="rectangle-colletion-library">
 
                         <h1 onClick={navigateToGame} className="title-colletion">{title}</h1>
 

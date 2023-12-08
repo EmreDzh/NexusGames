@@ -91,9 +91,12 @@ export default function MyLibrary() {
                             {mods.length !== 0 ? (
                                 <>
                                     <h2 className='collection-h2'>{username}'s collection of mods:</h2>
-                                    {currentMods.map(mod => (
-                                        <MyLibraryModList key={mod._id} {...mod} />
-                                    ))}
+                                    <div className="mod-collection-list-container-two">
+                                        {currentMods.map(mod => (
+                                            <MyLibraryModList key={mod._id} {...mod} />
+                                        ))}
+                                    </div>
+
                                 </>
                             ) : (
                                 <>
