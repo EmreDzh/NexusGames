@@ -89,8 +89,9 @@
     flex: 1;
     background-color: #4B4453;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px;    
   }
+
 
 .game-info-buttons{
     display: flex;
