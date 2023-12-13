@@ -5,6 +5,7 @@ import { useContext, useState } from 'react';
 import Path from '../../paths/paths';
 import { useNavigate, Link } from 'react-router-dom';
 
+
 const RegisterFormKeys = {
   Username: 'username',
   Email: 'email',
@@ -12,14 +13,14 @@ const RegisterFormKeys = {
   ConfirmPassword: 'confirmPassword',
 };
 
-
-
 export default function Register() {
   const navigate = useNavigate();
   const { registerSubmitHandler } = useContext(AuthContext);
   const [errors, setErrors] = useState({
     password: '',
     confirmPassword: '',
+    registration: '',
+
   });
 
   const validatePasswordLength = (password) => {
@@ -29,7 +30,6 @@ export default function Register() {
   const passwordsMatch = (password, confirmPassword) => {
     return password === confirmPassword;
   };
-
 
   const validatePassword = (password, confirmPassword) => {
     const newErrors = {
@@ -45,25 +45,34 @@ export default function Register() {
       newErrors.confirmPassword = 'Passwords do not match';
     }
 
-    setErrors(newErrors);
+    setErrors((prevErrors) => ({ ...prevErrors, ...newErrors })); 
 
     return Object.values(newErrors).every((error) => error === '');
   };
 
-  const { values, onChange } = useForm(() => {}, {
+  const { values, onChange } = useForm(() => { }, {
     [RegisterFormKeys.Username]: '',
     [RegisterFormKeys.Email]: '',
     [RegisterFormKeys.Password]: '',
     [RegisterFormKeys.ConfirmPassword]: '',
   });
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    const { password, confirmPassword } = values;
+    const { password, confirmPassword, email } = values;
     const isValid = validatePassword(password, confirmPassword);
 
     if (isValid) {
-      registerSubmitHandler(values);
+      try {
+        await registerSubmitHandler(values);
+      } catch (error) {
+        console.error('Registration error:', error);
+
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          registration: 'Email already exists. Please use a different email.',
+        }));
+      }
     }
   };
 
@@ -97,7 +106,6 @@ export default function Register() {
               onChange={onChange}
               value={values[RegisterFormKeys.Password]}
             />
-            
             <input
               type="password"
               id="confirmPassword"
@@ -106,9 +114,9 @@ export default function Register() {
               onChange={onChange}
               value={values[RegisterFormKeys.ConfirmPassword]}
             />
+            {errors.registration && <div className="error-message">{errors.registration}</div>}
             {errors.confirmPassword && <div className="error-message">{errors.confirmPassword}</div>}
             {errors.password && <div className="error-message">{errors.password}</div>}
-
             <input className="button" type="submit" value="Register" />
           </form>
           <div className="signup">
