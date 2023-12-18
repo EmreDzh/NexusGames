@@ -54,6 +54,7 @@ export default function Login() {
               placeholder="Enter your email"
               onChange={onChange}
               value={values[LoginFormKeys.Email]}
+              required
             />
             <input
               type="password"
@@ -62,6 +63,7 @@ export default function Login() {
               placeholder="Enter your password"
               onChange={onChange}
               value={values[LoginFormKeys.Password]}
+              required
             />
 
             {errors.loginError && (
