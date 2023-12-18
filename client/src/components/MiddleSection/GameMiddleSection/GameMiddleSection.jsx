@@ -27,8 +27,6 @@ export default function GameMiddeSection({ games }) {
 
       <div className="rectangle">
 
-        <h1 onClick={navigateToLoginPage} className="title">{currentGame.title}</h1>
-
         <div className="left" onClick={navigateToLoginPage}>
           <img src={currentGame.imageUrl} alt="Story" />
         </div>
