@@ -15,18 +15,12 @@ export default class ErrorHandler extends Component {
             hasError: true,
         }
     }
-    
-    /*
-    componentDidCatch(error, errorInfo) {
-        console.log('componentDidCatch')
-        // TODO logging
-    }
-    */
+
 
     render() {
         if (this.state.hasError) {
             return(
-                <h1>404 Check the error handler</h1>
+                <h1>Site or Server Down please check the ErrorHandler for more information!</h1>
             )
         }
 
